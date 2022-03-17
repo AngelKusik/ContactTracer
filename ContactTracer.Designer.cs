@@ -40,16 +40,16 @@ namespace lab4_ContactTracer
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.checkBoxContacted = new System.Windows.Forms.CheckBox();
             this.listViewCustomersEntered = new System.Windows.Forms.ListView();
-            this.labelOutput = new System.Windows.Forms.Label();
-            this.buttonEnter = new System.Windows.Forms.Button();
-            this.buttonReset = new System.Windows.Forms.Button();
-            this.buttonExit = new System.Windows.Forms.Button();
             this.columnHeaderContacted = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderFirstName = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderLastName = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderDate = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderEmail = new System.Windows.Forms.ColumnHeader();
             this.columnHeaderPhoneNumber = new System.Windows.Forms.ColumnHeader();
+            this.labelOutput = new System.Windows.Forms.Label();
+            this.buttonEnter = new System.Windows.Forms.Button();
+            this.buttonReset = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
@@ -155,46 +155,6 @@ namespace lab4_ContactTracer
             this.listViewCustomersEntered.UseCompatibleStateImageBehavior = false;
             this.listViewCustomersEntered.View = System.Windows.Forms.View.Details;
             // 
-            // labelOutput
-            // 
-            this.labelOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelOutput.Location = new System.Drawing.Point(41, 848);
-            this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(1005, 182);
-            this.labelOutput.TabIndex = 10;
-            this.toolTip1.SetToolTip(this.labelOutput, "Displays output and error messages.");
-            // 
-            // buttonEnter
-            // 
-            this.buttonEnter.Location = new System.Drawing.Point(608, 1060);
-            this.buttonEnter.Name = "buttonEnter";
-            this.buttonEnter.Size = new System.Drawing.Size(131, 40);
-            this.buttonEnter.TabIndex = 11;
-            this.buttonEnter.Text = "&Enter";
-            this.toolTip1.SetToolTip(this.buttonEnter, "Click to enter customer\'s information.");
-            this.buttonEnter.UseVisualStyleBackColor = true;
-            // 
-            // buttonReset
-            // 
-            this.buttonReset.Location = new System.Drawing.Point(764, 1060);
-            this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(131, 40);
-            this.buttonReset.TabIndex = 12;
-            this.buttonReset.Text = "&Reset";
-            this.toolTip1.SetToolTip(this.buttonReset, "Click to reset the form.\r\n");
-            this.buttonReset.UseVisualStyleBackColor = true;
-            // 
-            // buttonExit
-            // 
-            this.buttonExit.Location = new System.Drawing.Point(915, 1060);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(131, 40);
-            this.buttonExit.TabIndex = 13;
-            this.buttonExit.Text = "E&xit";
-            this.toolTip1.SetToolTip(this.buttonExit, "Click to exit application.");
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.ButtonExitClick);
-            // 
             // columnHeaderContacted
             // 
             this.columnHeaderContacted.Text = "Contacted";
@@ -224,6 +184,48 @@ namespace lab4_ContactTracer
             // 
             this.columnHeaderPhoneNumber.Text = "Phone Number";
             this.columnHeaderPhoneNumber.Width = 200;
+            // 
+            // labelOutput
+            // 
+            this.labelOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelOutput.Location = new System.Drawing.Point(41, 848);
+            this.labelOutput.Name = "labelOutput";
+            this.labelOutput.Size = new System.Drawing.Size(1005, 182);
+            this.labelOutput.TabIndex = 10;
+            this.toolTip1.SetToolTip(this.labelOutput, "Displays output and error messages.");
+            // 
+            // buttonEnter
+            // 
+            this.buttonEnter.Location = new System.Drawing.Point(608, 1060);
+            this.buttonEnter.Name = "buttonEnter";
+            this.buttonEnter.Size = new System.Drawing.Size(131, 40);
+            this.buttonEnter.TabIndex = 11;
+            this.buttonEnter.Text = "&Enter";
+            this.toolTip1.SetToolTip(this.buttonEnter, "Click to enter customer\'s information.");
+            this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.Click += new System.EventHandler(this.ButtonEnterClick);
+            // 
+            // buttonReset
+            // 
+            this.buttonReset.Location = new System.Drawing.Point(764, 1060);
+            this.buttonReset.Name = "buttonReset";
+            this.buttonReset.Size = new System.Drawing.Size(131, 40);
+            this.buttonReset.TabIndex = 12;
+            this.buttonReset.Text = "&Reset";
+            this.toolTip1.SetToolTip(this.buttonReset, "Click to reset the form.\r\n");
+            this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.ButtonResetClick);
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(915, 1060);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(131, 40);
+            this.buttonExit.TabIndex = 13;
+            this.buttonExit.Text = "E&xit";
+            this.toolTip1.SetToolTip(this.buttonExit, "Click to exit application.");
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.ButtonExitClick);
             // 
             // FormContactTracer
             // 
