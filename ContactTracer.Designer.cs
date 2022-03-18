@@ -245,7 +245,7 @@ namespace lab4_ContactTracer
             this.AcceptButton = this.buttonEnter;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonExit;
+            this.CancelButton = this.buttonReset;
             this.ClientSize = new System.Drawing.Size(1086, 1128);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonReset);
